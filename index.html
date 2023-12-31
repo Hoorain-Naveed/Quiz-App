@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+.container{
+    margin-top: 7%;
+    width: 50%;
+    text-align: center;
+    justify-content: center;
+    margin-left: 25%;
+
+    background-color: white;
+    box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.4); /* Added box shadow */
+}
+body{
+    background-color: rgb(216, 213, 213);
+}
+.btn{
+    margin-top: 3%;
+    padding: 10px 20px;
+  background-color: rgb(190, 181, 181);
+  color: #080808;
+  border: none;
+  border-radius: 5px;
+  font-size: 16px;
+  cursor: pointer;
+  outline: none;
+}
+
+.btn:hover {
+  background-color: #2980b9;
+}
+
+.btn:active {
+  transform: translateY(1px);
+}
+.score{
+  display: none;
+}
+
+
+    </style>
+</head>
+<body>
+
+
+
+    <div class="container">
+        <div class="Question">
+          <h1 style="font-size: larger;"></h1></div>
+<br>
+        <div class="radio-group">
+            <div class="radio-item">
+              <input type="radio" id="ans1" name="options" value="option1"class="answer">
+              <label for="option1" id="option1">Option 1</label>
+            </div>
+            <div class="radio-item">
+              <input type="radio" id="ans2" name="options" value="option2"class="answer">
+              <label for="option2" id="option2">Option 2</label>
+            </div>
+            <div class="radio-item">
+              <input type="radio" id="ans3" name="options" value="option3" class="answer">
+              <label for="option3" id="option3">Option 3</label>
+            </div>
+            <div class="radio-item">
+              <input type="radio" id="ans4" name="options" value="option4"class="answer">
+              <label for="option4" id="option4">Option 4</label>
+            </div>
+          </div>
+          <button class="btn">SUBMITT</button>
+
+
+<div class="score">
+    <div class="scoring"id='showScore'></div>
+    
+</div>
+
+    </div>
+
+<script src="./script.js"></script>
+</body>
+</html>
